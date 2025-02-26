@@ -1,0 +1,29 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+ 
+}
+
+div{
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+#e{                             
+    background-color: blue;
+
+}
+#ed{
+    background-color: aquamarine;
+}
+a{
+    text-decoration: none;
+    color:bisque;
+}

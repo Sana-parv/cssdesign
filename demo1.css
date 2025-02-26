@@ -1,0 +1,13 @@
+
+body{
+     height: 2000px;
+
+}
+    #sec1{
+  position: static;
+  top: 15px;
+  left:30px;
+    width: 500px;
+     height: 300px;
+     background-color: bisque;
+}

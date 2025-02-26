@@ -1,0 +1,217 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+}
+
+header{
+    width:100%;
+    background-color: rgb(2, 15, 41);
+    /* background-color: rgb(7, 72, 88); */
+    padding: 20px;
+    position: absolute;
+    top: 0;
+   
+}
+
+header .container{
+     display:flex; /*create flex container   */
+      justify-content: right; 
+    
+}
+
+header a{
+    text-decoration: none;
+    margin-right: 100px;   /* gap b/w links */
+    font-size: 14px ;  /*  size small */
+    letter-spacing: 1px;  /* SPACE b/w letter */
+
+}
+
+.banner-container{
+    margin-top:58px;  /* move content behind the header to down */
+     width:100%;
+     height:100vh ;
+     background-image:linear-gradient(rgb( 17, 25, 92) ,rgb(136, 218, 177)),url(./images/bluee.webp);
+     filter: brightness(.8);
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-position: center;
+      display: flex; 
+      align-items: center;
+}
+
+.banner-container .container{
+    display: flex;   /* left and right aayi */
+    justify-content: space-around;
+    width: 100%;
+   align-items:center; */
+}
+
+.left-sec{
+    width: 500px;
+    align-self: flex-start;
+}
+
+.left-sec h1{
+    margin:0;  /* verthey no change */
+    color: white;
+    font-size: 40px;
+}
+
+
+.left-sec p{
+    margin: 0;
+    font-size: 14px;
+    letter-spacing:1px ;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+   color: rgba(255,255,255,0.886);
+   line-height:18px ;
+   margin-top:  20px;;
+}
+
+.left-sec button{
+    color:rgb( 17, 25, 92);
+    margin-top: 20px;
+    background-color: aquamarine;
+    border: none;
+    padding: 12px 50px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.left-sec button:hover{
+    box-shadow: 0 3px 6px silver;
+}
+
+.right-sec{
+    /* color: azure; */
+   background-color:    rgb(160, 230, 233);
+   ;
+   border-radius: 15px;
+   padding: 40px 0;
+   box-shadow: 0 5px 6px rgba(16, 2, 29, 0.886);
+   text-align: center;
+}
+
+.right-sec h4{
+  
+ font-size: 20px;
+ width: 300px;
+ margin: auto;
+ margin-bottom:30px ;
+ color:rgb(2, 15, 41) ;
+
+}
+.input-group{
+    width: 300px;
+    margin:30px 30px ;
+    display: flex;
+    /* flex-direction: column; */
+    position: relative;
+  
+}
+.input-group label{
+    color:  rgb(12, 71, 235);
+    font-size: 14px;
+    position: absolute;
+   top:10px;
+   transition: 0.2s ease-in-out;
+    
+}
+
+.input-group input{
+    border: none;
+    padding: 7px;
+    margin-top: 5px;
+    outline: none;
+    color:rgb(46, 4, 197);
+    border-bottom: 1px solid aqua;
+    width: 280px;
+}
+
+.input-group input:focus~ label,
+.input-group input:valid~ label{   
+    color: brown;
+    top: -10px;
+    font-size: 12px;   
+}
+
+
+.input-group input:focus,
+.input-group input:valid{   
+    border-color:rgb(46, 4, 197) ;   
+}
+
+.submit{
+  text-align: center;
+}
+
+
+.submit-button{
+    color:rgb( 17, 25, 92) ;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    background-color: aquamarine;
+    margin-top: 20px;
+    font-weight: bold;
+    padding: 12px 50px;
+}
+
+.submit-button:hover{
+    box-shadow:0 3px 6px silver;
+}
+
+/* section 2 */
+
+.section-two{
+    display: flex;
+    justify-content:space-evenly ;
+    height:100vh;
+    align-items: center;
+}
+.card-container{
+width: 350px;
+border-radius: 15px;
+box-shadow:10px 5px 26px rgb(129, 125, 125);
+overflow: hidden;
+text-align: center;
+}
+
+.card-container h1{
+    color:rgb(2, 15, 41);
+}
+.img-container{
+    width:100% ;
+    height: 450px;
+    overflow: hidden;
+}
+.img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover ;
+    transition: 0.5s ease-in-out;
+}
+.img-container img:hover{
+    transform:scale(1.1) rotate(-5deg);
+}
+
+/* end section */
+
+footer{
+    text-align: center;
+    color: grey;
+    padding: 15px;
+}  
+
+footer span{
+    color:rgb(2, 15, 41) ;
+    font-weight: bold;
+}
